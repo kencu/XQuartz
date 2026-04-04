@@ -246,6 +246,9 @@ setup_environment() {
     # https://mesonbuild.com/Reference-tables.html#Environment-variables-per-machine
     export CC_FOR_BUILD="${CC}"
     export CXX_FOR_BUILD="${CXX}"
+    export CFLAGS_FOR_BUILD="${CFLAGS}"
+    export CXXFLAGS_FOR_BUILD="${CXXFLAGS}"
+    export LDFLAGS_FOR_BUILD="${LDFLAGS}"
 
     # For static analysis if we want to do it
     #SCAN_BUILD="scan-build-mp-10 -v -V -o clang.d --use-cc=${CC} --use-c++=${CXX}"
